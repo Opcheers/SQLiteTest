@@ -35,15 +35,14 @@
     </connection>
   </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
-    <open-files>
-      <object connection-id="525ab2cb-fd78-402a-9c34-715bdecb1549" object-ref="schemas/main/tables/Book" />
-    </open-files>
+    <open-files />
   </component>
   <component name="DBNavigator.Project.DatabaseSessionManager">
     <connection id="525ab2cb-fd78-402a-9c34-715bdecb1549" />
     <connection id="798ef138-1903-4964-93c7-56b4d81f140e" />
   </component>
   <component name="DBNavigator.Project.DatasetFilterManager">
+    <filter-actions connection-id="525ab2cb-fd78-402a-9c34-715bdecb1549" dataset="main.book" active-filter-id="EMPTY_FILTER" />
     <filter-actions connection-id="525ab2cb-fd78-402a-9c34-715bdecb1549" dataset="main.Book" active-filter-id="EMPTY_FILTER" />
   </component>
   <component name="DBNavigator.Project.EditorStateManager">

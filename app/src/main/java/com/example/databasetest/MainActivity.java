@@ -99,10 +99,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                         Log.d(TAG, "name == " + name);
                     } while (cursor.moveToNext());
                 }
+
                 cursor.close();
                 break;
             default:
                 break;
         }
+
+
     }
 }
