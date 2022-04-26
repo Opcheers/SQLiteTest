@@ -17,6 +17,7 @@
             android:enabled="true"
             android:exported="true" >
         </provider>
+        <!--enabled和exported为true表示允许DatabaseProvider被其他应用程序进行访问-->
 
         <activity
             android:name=".MainActivity"

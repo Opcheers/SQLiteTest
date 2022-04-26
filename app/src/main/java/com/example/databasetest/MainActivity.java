@@ -22,13 +22,12 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button updateBtn;
     private Button deleteBtn;
     private Button queryBtn;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        dbHelper = new MyDatabaseHelper(this, "BookStore.db", null, 4);
+        dbHelper = new MyDatabaseHelper(this, "BookStore.db", null, 1);
 
         createDatabaseBtn = this.findViewById(R.id.create_database);
         addBtn = this.findViewById(R.id.add_data);
@@ -42,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         deleteBtn.setOnClickListener(this);
         queryBtn.setOnClickListener(this);
     }
+
 
 
     @Override
@@ -95,7 +95,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 if (cursor.moveToFirst()) {
                     do {
                         //遍历Cursor对象，取出数据并打印
-                        @SuppressLint("Range") String name = cursor.getString(cursor.getColumnIndex("name"));
+                        String name = cursor.getString(cursor.getColumnIndex("name"));
                         Log.d(TAG, "name == " + name);
                     } while (cursor.moveToNext());
                 }
